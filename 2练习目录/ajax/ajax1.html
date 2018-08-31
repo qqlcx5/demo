@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>请求文本</title>
+</head>
+<body>
+<button id='btn'>请求纯文本</button>
+<br>
+<h4 id='text'></h4>
+<script>
+    document.getElementById('btn').addEventListener("click",loadText);
+    function loadText(){
+        // console.log('123');
+        const xhr = new XMLHttpRequest();
+        // console.log(xhr);
+        xhr.open('GET','sample.text',true);
+        
+        xhr.onprogress=function(){
+            console.log('READYSTATE:',xhr.readyState)
+        }
+        xhr.onload=function(){
+            console.log('READYSTATE:',xhr.readyState)
+            console.log(this.responseText);
+            document.getElementById('text').innerHTML=this.responseText
+        }
+        // xhr.onreadystatechange =function(){
+        //     console.log('READYSTATE:',xhr.readyState)
+        //     if (this.status == 200 && this.readyState == 4) {
+        //         console.log(this.responseText);
+        //     }
+        // }
+        xhr.send();
+    }
+</script>
+</body>
+</html>

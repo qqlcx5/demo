@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;}
+    li{list-style: none}
+    .wrap{
+        width: 330px;
+        height: 30px;
+        background-image: url(imgs/bg.jpg);
+        margin: 100px auto 0;
+        padding-left: 10px;
+    }
+    .wrap li{
+        float: left;
+        width: 100px;
+        margin-right: 10px;
+        position: relative;
+    }
+    .wrap a{
+        text-decoration: none;
+        color:black;
+        display: block;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-image: url(imgs/libg.jpg);
+    }
+    .wrap li ul{
+        position: absolute;
+        display: none;
+    }
+</style>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".wrap li").mouseenter(function () {
+            $(this).children("ul").show();
+        });
+        $(".wrap li").mouseleave(function () {
+            $(this).children("ul").hide();
+        });
+    });
+    $(document).ready(function () {
+        $(".wrap li").hover(function () {
+            $(this).children("ul").show();
+        },function () {
+            $(this).children("ul").hide();
+        })
+    });
+
+    $(document).ready(function () {
+        $(".wrap li").hover(function () {
+            var $this=$(this).children("ul");
+            var isShow=$this.css("display");
+            if(isShow==="block"){
+                $this.hide();
+            }else {
+                $this.show();
+            }
+        })
+    })
+
+    $(document).ready(function () {
+        $(".wrap li").hover(function () {
+            $(this).children("ul").slideToggle();
+        })
+    })
+
+
+
+</script>
+<body>
+<div class="wrap">
+<ul>
+    <li>
+        <a href="#">一级列表1</a>
+        <ul>
+            <li><a href="#">二级列表1</a></li>
+            <li><a href="#">二级列表2</a></li>
+            <li><a href="#">二级列表3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">一级列表2</a>
+        <ul>
+            <li><a href="#">二级列表1</a></li>
+            <li><a href="#">二级列表2</a></li>
+            <li><a href="#">二级列表3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">一级列表3</a>
+        <ul>
+            <li><a href="#">二级列表1</a></li>
+            <li><a href="#">二级列表2</a></li>
+            <li><a href="#">二级列表3</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</body>
+</html>

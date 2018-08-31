@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>php请求</title>
+</head>
+<body>
+<button id="btn">php请求</button>
+<h1>get 请求</h1>
+<form id="get">
+    <input type="text" name="name" id="getName">
+    <input type="submit" value="提交">
+</form>
+<h1>post 请求</h1>
+<form id="post">
+    <input type="text" name="name" id="postName">
+    <input type="submit" value="提交">
+</form>
+<script>
+    document.getElementById('btn').addEventListener('click',()=>
+        {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET","process.php?name=herny",true)
+        xhr.onload=function(){
+            console.log(this.responseText)
+        }
+        xhr.send()
+    })    
+    document.getElementById('get').addEventListener('submit',(e)=>
+        {
+        e.preventDefault()
+        var xhr = new XMLHttpRequest();
+        var name = document.getElementById("getName").value
+        xhr.open("GET","process.php?name="+name,true)
+        xhr.onload=function(){
+            console.log(this.responseText)
+        }
+        xhr.send()
+    }) 
+    document.getElementById('post').addEventListener('submit',(e)=>
+        {
+        e.preventDefault()
+        var xhr = new XMLHttpRequest();
+        var name = document.getElementById("postName").value
+        var params ="name="+name
+        xhr.open("POST","process.php",true)
+        xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+        xhr.onload=function(){
+            console.log(this.responseText)
+        }
+        xhr.send(params)
+    })
+</script>
+</body>
+</html>

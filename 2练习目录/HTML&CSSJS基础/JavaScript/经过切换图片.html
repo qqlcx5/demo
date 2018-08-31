@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="images/pic1.jpg" alt="" id="pic">
+</body>
+</html>
+<script>
+    var pic = document.getElementById("pic");
+    pic.onmousemove =function () {
+            pic.src = "images/pic2.jpg";
+    };
+    pic.onmouseout=function () {
+    pic.src="images/pic1.jpg";
+    };
+</script>

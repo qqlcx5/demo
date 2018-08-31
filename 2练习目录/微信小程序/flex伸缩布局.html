@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    html,body{
+        min-width: 320px;
+        max-width: 540px;
+        margin:0 auto;
+        font:normal 14px/1.5 "microsoft yahei";
+    }
+    nav{
+        border: 1px solid #ccc;
+        padding:4px;
+    }
+    nav a{
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 0 2px 1px rgba(0,0,0,.2)
+    }
+    .row{
+        height: 90px;
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;   /*大盒子圆角，小盒子隐藏*/
+    } 
+    .row div{
+        height: 100%;
+        flex: 1;
+        background-color: #FF697A;
+        border-right: 1px solid #fff;
+    }
+    .row div:nth-child(3){
+        border-right: 0;
+    }
+    .row div a{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+    .row33{
+        flex-direction: column;
+        display: flex;
+    }
+    .row33 a{
+        flex: 1;
+        text-align: center;
+        line-height: 45px;
+   
+    }
+    .row33 a:first-child{
+        border-bottom: 1px solid #fff;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="row">
+            <div>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="row33">
+                <a href="#">特价酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="row33">
+                <a href="#">特价酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+        </div>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            background-color: #333333;
+            height: 100px;
+            width: 300px;
+            position: relative;
+        }
+    </style>
+</head>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+    $(function () {
+       $("#btn").click(function () {
+           var txtTop =$("#txtTop").val();
+           var txtLeft=$("#txtLeft").val();
+           $("div").offset({
+               top:txtTop,
+               left:txtLeft
+           })
+       })
+    })
+</script>
+<body>
+<button id="btn">设置offset值</button>
+<lable for="txtTop">top：</lable><input type="text" id="txtTop">
+<lable for="txtTop">left：</lable><input type="text" id="txtLeft">
+<div></div>
+</body>
+</html>

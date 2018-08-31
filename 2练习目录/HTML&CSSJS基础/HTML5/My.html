@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My HTML</title>
+</head>
+<script type="javascript"></script>
+<body>
+<h1 id="here">HTML介绍</h1>
+<strong>什么是HTML</strong>
+<p>是一门超文本标记语言（HyperText Markup Language, HTML）<br>
+排版语言发展过来的，浏览器中如何显示<br>
+标准由W3C以文字的形式确定下来，实际上由大的厂商和机构制定，<br>
+因为需要HTML支持各种特性htm 是 html的缩略(早期文件拓展命字符数限制)
+    <strong>html文件框架</strong>
+</p>
+<strong>html文件框架</strong>
+<p>
+    &lt;!DOCTYPE html&gt;(申明用的是HTML5)<br>
+    &lt;html&gt;<br>
+    &lt;head&gt;配置、样式表<br>
+    &lt;title&gt;我的页面标题&lt;title&gt;<br>
+    &lt;meta charset=utf-8&gt;(统一的字符编码，包含全球各种文字) <br>
+    &lt;/head&gt;<br>
+    &lt;body>&gt;正文&lt;/body&gt;<br>
+    &lt;/html&gt;<br>
+</p>
+<hr size=3 color="red">
+    <abbr title="简称PRC"><h2>中华人民共和国</h2></abbr>
+<strong>无序列表</strong>
+<ul>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+    <li>list item 4</li>
+</ul>
+<strong>有序列表</strong>
+<ol>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+    <li>list item 4</li>
+</ol>
+<strong>自定义列表</strong>
+<dl>
+    <dt>咖啡</dt>
+    <dd><input type="checkbox" checked="checked">加冰块</dd>
+    <dd><input type="checkbox" checked="checked">加方糖</dd>
+    <dd><input type="checkbox" checked="checked">不加糖</dd>
+</dl>
+<strong>图片</strong><br>
+<img src="1.jpg" alt="美女" width="150" height="200"><br>
+<strong>超链接</strong><br>
+<a href="http://news.163.com">网易新闻</a><br>
+<strong>表格</strong><br>
+<table bgcolor="#00008b" width="300" height="200" cellspacing="1">
+    <caption>表头</caption>
+    <tr bgcolor="#c71585">
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+        <th>星期四</th>
+        <th>星期五</th>
+    </tr> <tr bgcolor="#b22222"/>
+    <td>语文</td>
+    <td>数学</td>
+    <td>体育</td>
+    <td>音乐</td>
+    <td>历史</td>
+    </tr>
+</table>
+<form action="1.php" method="post">
+    <fieldset>
+        <legend>注册账号</legend>
+        用户名:<input type="text"><br>
+        密&nbsp;&nbsp;码:<input type="password"><br>
+        <input type="radio" name="gender" checked="checked">男
+        <input type="radio" name="gender">女 <br><br>
+        省（市）:<select>
+        <option selected="selected">--请选择--</option>
+        <option >上海</option>
+        <option >北京</option>
+        <option >福建</option>
+        <option >广东</option>
+        <option >广西</option>
+    </select>
+        市（县）:<select>
+        <option selected="selected">--请选择--</option>
+        <option >上海</option>
+        <option >北京</option>
+        <option >福建</option>
+        <option >广东</option>
+        <option >广西</option>
+    </select>
+        镇（乡）:<select>
+        <option selected="selected">--请选择--</option>
+        <option >上海</option>
+        <option >北京</option>
+        <option >福建</option>
+        <option >广东</option>
+        <option >广西</option>
+    </select><br>
+        <input type="submit">
+    </fieldset>
+</form>
+<a href="#here">回到顶部</a><br>
+<iframe src="http://news.163.com>" frameborder="1"></iframe>
+</body>
+</html>

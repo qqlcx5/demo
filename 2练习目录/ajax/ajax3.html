@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>github请求</title>
+    <style>
+        .user{
+            display: flex;
+            background:#ccc;
+            margin:10px 0;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<button id="btn">请求</button>
+<br><br>
+<h1>github请求</h1>
+<div id="github"></div>
+<script>
+    document.getElementById('btn').addEventListener('click',()=>{
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET',"https://api.github.com/users",true)
+        xhr.onload=function(){
+            // console.log()
+            var users = JSON.parse(this.responseText);
+            var output=''
+            for(var i in users){
+            output +=`
+            <div class='user'>
+            <image src='${users[i].avatar_url}' width='70' height='70'></image>
+                <ul>
+                    <li>${users[i].id}</li>
+                    <li>${users[i].login}</li>
+                </ul>
+            </div>
+            `
+            }
+            document.getElementById('github').innerHTML = output
+        }
+        xhr.send()
+    });
+    
+
+</script>
+</body>
+</html>

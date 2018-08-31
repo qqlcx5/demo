@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="favicon.ico">
+    <title>京东</title>
+    <style>
+        .header{
+            line-height: 30px;
+            height: 30px;
+            background-color: #f1f1f1;
+        }
+        .header .dt{
+            padding:0 20px 0 10px;
+            position: relative;
+        }
+        .header i {
+            font: 400 15px/15px simsun;
+            width: 15px;
+            height: 7px;
+            position: absolute;
+            top: 14px;
+            right: 3px;
+            overflow: hidden;
+        }
+        .header s{
+            position: absolute;
+            top: -8px;
+            left: 0;
+        }
+        .header li{
+            float: left;
+            padding: 0 10px;
+        }
+        .header .line{
+            width: 1px;
+            height: 12px;
+            background-color: #DDDDDD;
+            margin-top: 9px;
+            padding:0 ;
+        }
+        .header .tel-jd{
+            padding: 0 20px 0 25px;
+            position: relative;
+        }
+        .tel-jd .tel{
+            position: absolute;
+            width: 15px;
+            height: 20px;
+            background: url(images/sprite.png) no-repeat;
+            left: 5px;
+            top:5px;
+        }
+        .top-banner{
+            background-color: #8B25C6;
+        }.top-banner .w{
+                     position: relative;
+                 }
+        .top-banner .close{
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 19px;
+            height: 19px;
+            background:url(images/close.png) no-repeat;
+        }
+        .top-banner .close:hover{
+            background:url(images/close.png) no-repeat bottom;
+        }
+
+    </style>
+    <style>
+        .logo{
+            float: left;
+            width: 360px;
+            height: 100px;
+            background: url(images/logo.png)no-repeat 0 25px;
+            position: relative;
+        }
+        .jd-logo{
+            display: block;
+            height: 60px;
+            width: 270px;
+            text-indent: -2000em;
+        }
+        .dbll{
+            position: absolute;
+            width: 180px;
+            height: 80px;
+            top: 4px;
+            right: 19px;
+        }
+        .search{
+            float: left;
+            width: 534px;
+            height: 32px;
+            margin-top: 25px;
+            border: 2px solid #b61d1d;
+        }
+        .search input{
+            font: 400 14px/32px microsoft yahei;
+            color: #999;
+            padding-left: 10px;
+            float: left;
+        }
+        .search button{
+            float: right;
+            background-color: #b61d1d;
+            font: 400 16px/32px microsoft yahei;
+            width: 78px;
+            height: 32px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .shop{
+            float: right;
+            width: 96px;
+            line-height: 34px;
+            padding-left: 43px;
+            border: 1px solid #DFDFDF;
+            margin:25px 65px 0 0;
+            position: relative;
+        }
+        .shop .icon1{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 16px;
+            height: 13px;
+            background: url(images/sprite.png) no-repeat -1px -59px;
+        }
+        .shop .icon2{
+            margin-left: 10px;
+            font: 400 13px/13px simsun;
+        }
+        .shop .icon3{
+            position: absolute;
+            right: 21px;
+            top: -3px;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+            background: #C81623;
+            color: #ffffff;
+            border-radius: 7px 7px 7px 0;
+        }
+        .hotwords{
+            width: 500px;
+            /*height: 30px;*/
+            /*line-height: 30px;*/
+            padding: 7px 0 ;
+
+        }
+        .hotwords li{
+            float: left;
+            padding-right: 6px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">送至：北京
+            <i><s>◇</s></i>
+            </div>
+        </div>
+        <div class="fr">
+            <ul>
+                <li>
+                    <a href="#">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="#" class="col-red">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>我的订单</li>
+                <li class="line"></li>
+                <li class="dt">我的京东<i><s>◇</s></i></li>
+                <li class="line"></li>
+                <li>京东会员</li>
+                <li class="line"></li>
+                <li class="dt tel-jd">
+                <em class="tel"></em>手机京东<i><s>◇</s></i></li>
+                <li class="line"></li>
+                <li class="dt">企业采购<i><s>◇</s></i></li>
+                <li class="line"></li>
+                <li class="dt">网站导航<i><s>◇</s></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="top-banner">
+    <div class="w">
+                <img src="images/topbanner.jpg" alt="">
+                <em class="close"></em>
+    </div>
+</div>
+<div class="w">
+    <div class="logo">
+        <div>
+        <a href="#" title="叮咚" class="jd-logo">京东</a></div>
+        <div class="dbll">
+            <a href="#"><img src="images/dong.gif" alt=""></a>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" value="图书开抢">
+        <button class="btn">搜索</button>
+    </div>
+    <div class="shop">
+        <a href="#">我的购物车</a>
+        <span class="icon1"></span>
+        <span class="icon2">></span>
+        <span class="icon3">7</span>
+    </div>
+    <div class="hotwords fl">
+        <ul>
+            <li><a href="#">11月11天</a></li>
+            <li><a href="#">11.11秒杀</a></li>
+            <li><a href="#">买2免1</a></li>
+            <li><a href="#">红米Note5</a></li>
+            <li><a href="#">12期免息</a></li>
+            <li><a href="#">智能科技</a></li>
+            <li><a href="#">清仓</a></li>
+            <li><a href="#">国际服饰</a></li>
+            <li><a href="#">优惠券</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #demo{
+            width: 100px;
+            height: 100px;
+            background-color: #e3e222;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+<button id="btn">扩大一倍</button>
+</body>
+<script>
+    var demo =document.getElementById("demo");
+    var btn =document.getElementById("btn");
+    btn.onclick =function () {
+        demo.style.width ="150px";
+        demo.style.height ="100px";
+        demo.style.backgroundColor="#126";
+    }
+</script>
+</html>

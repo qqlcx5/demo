@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <title>京东</title>
+</head>
+<style type="text/css">
+.banner604 {
+    position: relative;
+}
+.banner604 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 604px;
+    background: url(images/banner.jpg) no-repeat top center;
+}
+.main {
+    position: relative;
+}
+.slider {
+    width: 730px;
+    height: 453px;
+    background-color: pink;
+    margin: 12px 0 0  220px;
+    float: left;
+    position: relative;
+}
+.circle {
+    position: absolute;
+    bottom:8px;
+    left: 50%;
+    margin-left: -66px;
+}
+.circle li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    float: left;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.circle li.current {
+    background-color: #B61B1F;
+}
+.arrow-l, .arrow-r {
+    position: absolute;
+    width: 28px;
+    height: 62px;
+    top: 50%;
+    margin-top: -31px;
+    color: #fff;
+    font: 500 18px/62px "宋体";
+    text-align: center;
+    background: rgba(0,0,0,.2);
+}
+.arrow-l {
+    left: 0;
+}
+.arrow-r {
+    right: 0;
+}
+.arrow-l:hover,.arrow-r:hover {
+    background: rgba(0,0,0,.4);
+    color: #fff;
+}
+.news {
+    width: 248px;
+    height: 451px;
+    border: 1px solid #E4E4E4;
+    float: right;
+    margin-top: 12px;
+}
+.jd-news{
+    height: 200px;
+    border-bottom: 1px dashed #e4e4e4
+}
+.news .dt{
+    height: 43px;
+    border-bottom:  1px dotted #E8E8E7;
+}
+.news .dt h3{
+    float: left;
+    font: 14px/43px microsoft yahei;
+    color: #666666;
+    padding-left: 15px;
+}.jd-news .dt a{
+    float: right;
+    font: 13px/43px simsun;
+    padding-right: 15px;
+}
+ .jd-news .dd ul{
+     padding: 8px 0 0 15px;
+ }
+.jd-news .dd li {
+    line-height: 28px;
+}
+.jd-news .dd span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+.lifeservi{
+    height: 251px;
+    overflow: hidden;
+    width: 248px;
+}
+.lifeservi ul{
+    width:252px;
+}
+.lifeservi li{
+    width: 62px;
+    height: 70px;border: 1px solid #e4e4e4;
+    border-top: 0;
+    float: left;
+    margin-left: -1px;
+}
+.lifeservi li a{
+    display: block;
+    height: 70px;
+    text-align: center;
+    padding-top: 44px;
+    position: relative;
+}
+.lifeservi li i{
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background: url(images/icon_lifeserv.png) no-repeat right top;
+}
+</style>
+<body>
+<div class="banner604">
+    <a href="#">
+    </a>
+</div>
+
+
+<div class="w main clearfix">
+    <div class="slider">
+        <a href="#"><img src="images/slider1.jpg" alt=""/></a>
+        <ul class="circle"> <!-- 小圆点-->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li class="current">6</li>
+        </ul>
+
+        <div class="arrow">   <!--左右两个三角-->
+            <a href="javascript:;" class="arrow-l"><</a>
+            <a href="javascript:;" class="arrow-r">></a>
+        </div>
+
+    </div>
+    <div class="news">
+        <div class="jd-news">
+            <div class="dt">
+                <h3>京东快报</h3>
+                <a href="#">更多></a>
+            </div>
+            <div class="dd">
+                <ul>
+                    <li><a href="#"><span>[特惠]</span>1元秒杀</a></li>
+                    <li><a href="#"><span>[公告]</span>母婴类APP【京东宝宝】上线</a></li>
+                    <li><a href="#"><span>[特惠]</span>美的品牌日 APP嗨购大放“价”</a></li>
+                    <li><a href="#"><span>[公告]</span>京东深入蒙牛生产基地进行质检</a></li>
+                    <li><a href="#"><span>[特惠]</span>白条购家电 24期免息！</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lifeservi">
+            <div class="dt">
+                <h3>生活服务</h3>
+            </div>
+            <div class="dd">
+                <ul>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                    <li class="life-icon1"><a href="#"><i></i><span>话费</span></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

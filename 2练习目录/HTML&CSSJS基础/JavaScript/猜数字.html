@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+//        var arr=[];
+//        var gus=prompt("请输入数字");'
+//        var num1=Math.ceil(Math.random()*100);
+    var return1=confirm("是否开始猜数游戏");
+        if(return1){
+        var num1=math();
+        guess()
+        }else{
+            window.close()
+        }
+        function math() {
+            return Math.ceil(Math.random()*100);
+        }
+        function guess() {
+            var num2=prompt("请输入数字");
+            if (num1>num2){
+                alert("小");
+                guess()
+            }else if(num1<num2){
+                alert("大");
+                guess()
+            }else {
+               var result=confirm("正确，是否继续");
+               if(result){
+                   guess();
+               }else {
+                   window.close()
+               }
+            }
+        }
+</script>
+<body>
+
+</body>
+</html>

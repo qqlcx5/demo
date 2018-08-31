@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="favicon.ico">
+    <title>京东</title>
+    <style>
+        .header{
+            line-height: 30px;
+            height: 30px;
+            background-color: #f1f1f1;
+        }
+        .header .dt{
+            padding:0 20px 0 10px;
+            position: relative;
+        }
+        .header i {
+            font: 400 15px/15px simsun;
+            width: 15px;
+            height: 7px;
+            position: absolute;
+            top: 14px;
+            right: 3px;
+            overflow: hidden;
+        }
+        .header s{
+            position: absolute;
+            top: -8px;
+            left: 0;
+        }
+        .header li{
+            float: left;
+            padding: 0 10px;
+        }
+        .header .line{
+            width: 1px;
+            height: 12px;
+            background-color: #DDDDDD;
+            margin-top: 9px;
+            padding:0 ;
+        }
+        .header .tel-jd{
+            padding: 0 20px 0 25px;
+            position: relative;
+        }
+        .tel-jd .tel{
+            position: absolute;
+            width: 15px;
+            height: 20px;
+            background: url(images/sprite.png) no-repeat;
+            left: 5px;
+            top:5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">送至：北京
+            <i><s>◇</s></i>
+            </div>
+        </div>
+        <div class="fr">
+            <ul>
+                <li>
+                    <a href="#">你好，请登录</a>&nbsp;&nbsp;
+                    <a href="#" class="col-red">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>我的订单</li>
+                <li class="line"></li>
+                <li class="dt">我的京东<i><s>◇</s></i></li>
+                <li class="line"></li>
+                <li>京东会员</li>
+                <li class="line"></li>
+                <li class="dt tel-jd">
+                <em class="tel"></em>手机京东<i><s>◇</s></i></li>
+                <li class="line"></li>
+                <li class="dt">企业采购<i><s>◇</s></i></li>
+                <li class="line"></li>
+                <li class="dt">网站导航<i><s>◇</s></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

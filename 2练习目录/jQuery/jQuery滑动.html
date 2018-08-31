@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function () {
+    $("div").css({
+        "display":"none",
+        "background":"gold",
+        "width":"400px",
+        "height":"200px"
+    });
+    $("input[type='button']").click(function () {
+        $(".divItem:first").slideDown(2000,"linear",function () {
+            
+        })
+        $(".divItem:last").slideDown(2000,"swing",function () {
+            
+        })
+    })
+    //speed[,fn]        Number/String,Function
+    //speed:三种预定速度之一的字符串("slow","normal", or "fast")或表示动画时长的毫秒数值(如：1000)
+
+    //fn:在动画完成时执行的函数，每个元素执行一次。
+
+//[speed],[easing],[fn]     Number/String,String,Function
+// speed:三种预定速度之一的字符串("slow","normal", or "fast")或表示动画时长的毫秒数值(如：1000)
+
+   // easing:(Optional) 用来指定切换效果，默认是"swing"，可用参数"linear"
+
+    //fn:在动画完成时执行的函数，每个元素执行一次。
+
+
+
+    $("button").eq(1).click(function () {
+        $(".divItem").slideToggle()
+    })
+
+})
+</script>
+<body>
+<input type="button" value="下拉">
+<button>上拉</button>
+<button>切换</button>
+<div class="divItem"></div>
+<!--<div class="divItem"></div>-->
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .divItem{
+            font-size: 20px;
+        }
+        .divItem1{
+            font-size: 25px;
+            background-color: #ffff22;
+        }
+
+    </style>
+</head>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function () {
+        //css
+//    $("li").css("font-size","20px")
+//    $("li").css({
+//        "background":"gold",
+//        "color":"while"
+//    })
+    //添加或删除样式
+    $("li").addClass("divItem");
+    $("li").eq(2).removeClass();
+    //removeClass([class|fn])
+    //从匹配的元素中删除 'selected' 类
+    //删除匹配元素的所有类
+
+    //切换样式
+    $("#demo").click(function () {
+        $("li").eq(3).toggleClass("divItem1")
+    })
+    //toggleClass(class|fn[,sw])
+    //如果存在（不存在）就删除（添加）一个类
+
+    //判断样式
+    $("#has").click(function () {
+    var hasdiv= $("li").eq(4).hasClass("divItem1");
+        if(hasdiv){
+            $("li").eq(4).removeClass("divItem1");
+        }else {
+            $("li").eq(4).addClass("divItem1");
+        }
+    })
+    //检查当前的元素是否含有某个特定的类，如果有，则返回true。
+    //这其实就是 is("." + class)。
+})
+</script>
+<body>
+<input type="button" value="切换样式" id="demo">
+<input type="button" value="判断样式" id="has">
+<ul>
+    <li>样式挺多1</li>
+    <li>样式挺多2</li>
+    <li>样式挺多3</li>
+    <li>样式挺多4</li>
+    <li>样式挺多5</li>
+    <li>样式挺多6</li>
+    <li>样式挺多7</li>
+    <li>样式挺多8</li>
+</ul>
+</body>
+</html>
